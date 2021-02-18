@@ -1,0 +1,980 @@
+@charset "utf-8";
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, p, div {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+*{
+  box-sizing: border-box;
+}
+/*         ここから書き始める          */
+
+
+
+$header-height-rspsv:60px;
+
+
+
+
+@media screen and (max-width:1280px){
+  header{
+    .header-container{
+      .header-leftright{
+        .contact-btn{
+          padding:0 40px;
+          font-size:12px;
+          letter-spacing: 0em;
+  
+        }
+      }
+    }
+  }/*         header end          */
+
+  .main-visual{
+    .mainvisual-container{
+      h1{
+        font-size:24px;
+      }
+      h2{
+        font-size:16px;
+      }
+    }
+  }/*         main-visual end          */
+
+  .document-request{
+    height: 460px;
+    .documentrequest-container{
+
+      p{
+        margin-bottom:10px;
+
+      }
+      .contact-btn{
+        font-size: 18px;
+        padding:25px 290px;
+        margin:0 auto;
+      }
+      .reception-period{
+        margin-top:30px;
+        margin-bottom: 30px;
+      }
+      h2{
+        margin-top:30px;
+      }
+    }
+  }/*         document-request end          */
+
+  .iSara-dontteach{
+    .iSara-dontteach-container{
+      .dontteach-top{
+        height:800px;
+        .dontteach-boxs{
+          .box{
+            display:block;
+            margin:10px auto;
+          }
+        }
+      }
+    }
+  
+  }/*         iSara-dontteach end          */
+
+  .iSara-merit{
+    .iSaramerit-container{
+      .three-merits{
+        .merit{
+          img{
+            width:300px;
+          }
+        }
+      }
+
+  
+    }
+  }/*         iSara-merit end          */
+
+  .course-flow{
+    height:1950px;
+    .courseflow-container{
+      .flowheading-img{
+        width:900px;
+      }
+    }
+  }/*         course-flow end          */
+
+  .iSara-benefits{
+    .iSarabenefits-container{
+      .benefits-box{
+        .benefits-wrapper{
+          .benefits{
+            width:200px;
+            height:200px;
+            margin:50px 30px;
+            .benefits-text{
+              h5{
+                width:180px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }/*             iSara-benefits end           */
+}
+@media screen and (max-width:960px){
+  .document-request{
+    .documentrequest-container{
+      .contact-btn{
+        font-size: 16px;
+        padding:25px 150px;
+      }
+    }
+  }/*         document-request end          */
+
+  .iSara-introduction{
+    .iSara-introduction-container{
+      .aboutbox{
+        height:220px;
+        .boxs{
+          .box{
+            padding: 10px;
+            img{
+              top:60%;
+            }
+            p{
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }/*         iSara-introduction end          */
+
+  .iSara-learn{
+    height:450px;
+    .iSaralearn-container{
+      .learn-box{
+        img{
+          margin: 7px;
+          width:160px;
+        }
+      }
+    }
+  }/*         iSara-learn end          */
+
+  .iSara-merit{
+    height:1400px;
+    .iSaramerit-container{
+      .three-merits{
+        text-align: center;
+        .merit{
+          width:100%;
+          h3{
+            font-size: 17px;
+          }
+          h4{
+            font-size: 14px;
+            padding-bottom:20px;
+          }
+        }
+      }
+      .merit-box{
+        height:220px;
+      }
+    }
+  }/*         iSara-merit end          */
+
+  .iSara-member{
+    height:2200px;
+    width:100%;
+    .iSaramember-container{
+      .member-box{
+        .member{
+          margin:0;
+          margin-bottom: 200px;
+          width:90%;
+          height:280px;
+          position: relative;
+          left:50%;
+          transform: translateX(-50%);
+        
+          img{
+            top:-20%;
+          }
+          .txtcontent-wrapper{
+            .txt-content{
+              font-size:14px;
+            }
+          }
+        }
+      }
+    }
+  }/*         iSara-member end          */
+
+  .interview{
+    .interview-container{
+      .interview-A{
+        height:900px;
+      }
+    }
+  }/*         interview end          */
+
+  .iSara-learnContents{
+    .iSaralearnContents-container{
+      .iSaralearnContents-top{
+        height:1200px; 
+        .top-container{
+          width:70%;
+          .table-left{
+            float: none;
+            margin:0;
+            margin-bottom:30px;
+          }
+          .table-right{
+            float:none;
+            margin:0;
+          }
+        }
+      }
+    }
+  }/*         iSara-learnContents end          */
+
+  .course-flow{
+    height:1720px;
+    .courseflow-container{
+      h1{
+        padding:40px 0 30px 0;
+      }
+      .flowheading-img{
+        width:80%;
+      }
+      .flowbox-wrapper{
+        .flow-box{
+          .boxin-wrapper{
+            .boxin-left{
+              img{
+                width:70px;
+              }
+              h2{
+                font-size:12px;
+              }
+            }
+            .boxin-right{
+              p{
+                font-size:13px;
+              }
+              .flow-supplement{
+                font-size:11px;
+              }
+            }
+          }
+        }
+        .flowline{
+          width:65%;
+        }
+      }
+    }
+  }/*         course-flow end          */
+
+  .iSara-benefits{
+    height:1400px;
+    .iSarabenefits-container{
+      .benefits-box{
+        text-align: center;
+        h3{
+          top:-2%;
+        }
+        .benefits-wrapper{
+          width:100%;
+          .benefits{
+            margin: 50px auto;
+            width:250px;
+            height:250px;
+            display:block;
+            .benefits-text{
+              h5{
+                width:222px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }/*             iSara-benefits end           */
+
+  .iSara-target{
+    height:450px;
+  }/*             iSara-target end           */
+
+  .massage{
+    height:530px;
+  }/*             massage end           */
+
+}
+
+
+@media screen and (max-width:845px){
+  header{
+    height:$header-height-rspsv;//height=.main-visualのmargin-top+header内複数個所
+    width:100%;
+  
+    .header-container{
+      max-width: 100%;
+    
+      .header-leftright{
+        height:$header-height-rspsv;
+        img{
+          float:none;
+          width:90px;
+          position:absolute;
+          left:1.5%;
+          top:65%;
+          transform: translateY(-50%);
+        }
+        p{
+          position:absolute;
+          left:1.5%;
+          top:20%;
+          transform: translateY(-50%);
+
+          padding:0;
+          margin:0;
+          letter-spacing: 0;
+        }
+        .contact-btn{
+          display:none;
+        }
+        .small-contactbtn{
+          display:block;
+          position: absolute;
+          right: 0%;
+          top: 0%;
+          width:75px;
+          height:$header-height-rspsv;
+          background-color: #da6b64;
+          .contactbtn-container{
+            height: $header-height-rspsv;
+            position: relative;
+            img{
+              width:20px;
+              position: absolute;
+              top:35%;
+              left:50%;
+              transform: translate(-50%,-50%);
+            }
+            .small-contactbtn-a{
+              color:white;
+              font-size: 13px;
+              display: block;
+              white-space:nowrap;//改行しなくする
+              padding:30px 11px 5px 10px;
+
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+
+              &:hover{
+                text-decoration: underline;//何故か薄い。直し方が分からない。。
+              }
+            }
+          }
+        }
+      }
+    }
+  
+  }/*         header end          */
+  .main-visual{
+    margin-top:$header-height-rspsv;
+    height:315px;
+    background-image: url(mainvisual-bg-small.jpg);
+    .mainvisual-container{
+      padding-top:15px;
+      h1{
+        font-size:18px;
+        line-height:28px;
+        padding-bottom:20px;
+      }
+      h2{
+        font-size:15px;
+        line-height:18px;
+      }
+    }
+  }/*         main-visual end          */
+
+  .real-freedom{
+    height:600px;
+    .realfreedom-container{
+      .realfreedom-title{
+        margin:20px auto;
+        width: 80%;
+      }
+      h2{
+        .br-responsive{
+          display:block;
+        }
+      }
+    }
+  }/*         real-freedom end          */
+
+  .iSara-introduction{
+    height:530px;
+    .iSara-introduction-container{
+      .introduction-title{
+        margin:60px 0 30px 0;
+        height: 100px;
+        width: 80%;
+      }
+      .aboutbox{
+        width:90%;
+        height:190px;
+        .fiveskill-heading{
+          margin-top:25px;
+          margin-bottom: 70px; 
+        }
+        .boxs{
+          .box{
+            padding: 7px;
+  
+            img{
+              position: absolute;
+              top:60%;
+              transform: translate(-50%,-100%);
+              height:40px;
+            }
+            p{
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
+  }/*         iSara-introduction end          */
+
+  .iSara-learn{
+    height:350px;
+    .iSaralearn-container{
+      h1{
+        padding:40px 0 30px 0;
+      }
+      .learn-box{
+        img{
+          margin: 8px;
+          width:100px;
+        }
+      }
+    }
+  }/*         iSara-learn end          */
+
+  .iSara-merit{
+    height:1400px;
+    .iSaramerit-container{
+      .merit-title{
+        margin:30px 0;
+        height: 90px;
+        width: 80%;
+      }
+      .three-merits{
+        .merit{
+          img{
+            width:280px;
+          }
+          h3{
+            font-size: 16px;
+            padding-bottom: 3px;
+          }
+          h4{
+            width:93%;
+            font-size:10px;
+            padding-bottom:30px;
+          }
+        }
+      }
+      .merit-box{
+        width:86.67%;
+        height:220px;
+      }
+      h8{
+        margin: 0 auto;
+        width:80%;
+        .br-responsive{
+          display:block;
+        }
+      }
+  
+    }
+  }/*         iSara-merit end          */
+
+  .interview{
+    .interview-container{
+      .interview-A{
+        height:740px;
+        .A-container{
+          .massages-box{
+            .company-massage{
+              .message{
+                width:300px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }/*         interview end          */
+
+  .massage{
+    height:800px;
+    .massage-container{
+      h1{
+        padding:40px 0 20px 0;
+      }
+      .massage-lr-wrapper{
+        .massage-left{
+          float: none;
+          img{
+            width:300px;
+          }
+        }
+        .massage-right{
+          width:400px;
+          padding-top:30px;
+        }
+      }
+    }
+  }/*             massage end           */
+
+  .question{
+    .question-container{
+      .panel-wrapper{
+        .panel{
+          .panel-top{
+            h2{
+              font-size:13px;
+            }
+          }
+        }
+      }
+    }
+  }/*             .question end           */
+}
+@media screen and (max-width:580px){
+  
+  .document-request{
+    .documentrequest-container{
+      .contact-btn{
+        font-size: 10px;
+        padding:30px 0px;
+      }
+    }
+  }/*         document-request end          */
+
+  .iSara-introduction{
+    height:648px;
+    .iSara-introduction-container{
+      .aboutbox{
+        height:300px;
+        .fiveskill-heading{
+          margin-top:30px;
+          margin-bottom: 82px;
+        }
+        .boxs{
+          .box{
+            padding: 5px;
+            width:33%;
+  
+            img{
+              height:40px;
+
+              position: absolute;
+              top:40%;
+              transform: translate(-50%,-100%);
+            }
+                .img-skill{
+                  position: absolute;
+                  top:72%;
+                  left:37%;
+                  transform: translate(-50%,-100%);
+                }
+                .img-connect{
+                  position: absolute;
+                  top:72%;
+                  left:63%;
+                  transform: translate(-50%,-100%);
+                }
+            p{
+              font-size: 10px;
+            }
+                .p-skill{
+                  position: absolute;
+                  top:84%;
+                  left:37%;
+                  transform: translate(-50%,-100%);
+                }
+                .p-connect{
+                  position: absolute;
+                  top:84%;
+                  left:63%;
+                  transform: translate(-50%,-100%);
+                }
+
+          }
+        }
+      }
+    }
+  }/*         iSara-introduction end          */
+
+  .iSara-merit{
+    .iSaramerit-container{
+      .merit-box{
+        h7{
+          .br-responsive{
+            display:block;
+          }
+        }
+      }
+    }
+  }/*         iSara-merit end          */
+
+  .iSara-member{
+    height:2450px;
+    .iSaramember-container{
+      h2{
+        font-size: 10px;
+      }
+      .member-box{
+        .member{
+          height:330px;
+          .txtcontent-wrapper{
+            .txt-content{
+              font-size:12px;
+            }
+          }
+        }
+      }
+    }
+  }/*         iSara-member end          */
+
+  .interview{
+    .interview-container{
+      .interview-A{
+        height:730px;
+        .A-container{
+          .massages-box{
+            .company-massage{
+              img{
+                width:100px;
+                height:100px;
+              }
+              .message{
+                width:200px;
+                h4{
+                  font-size: 12px;
+                  line-height: 1.2;
+                  letter-spacing: 0.02em;
+                  border: none;
+
+                  .br-responsive{
+                    display:block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }/*         interview end          */
+
+  .iSara-learnContents{
+    .iSaralearnContents-container{
+      .iSaralearnContents-top{
+        height:1050px;
+        .top-container{
+          h1{
+            font-size: 20px;
+          }
+          h2{
+            font-size: 13px;
+          }
+              p{
+                padding:15px 104px;
+                font-size: 12px;
+              }
+              li{
+                font-size: 12px;
+              }
+        }
+      }
+    }
+  }/*         iSara-learnContents end          */
+
+  .course-flow{
+    height:1700px;
+    .courseflow-container{
+      h1{
+        font-size: 15px;
+      }
+      .flowbox-wrapper{
+        .flow-box{
+          width:90%;
+          .boxin-wrapper{
+            .boxin-left{
+              width:20%;
+              h2{
+                padding-top:10px;
+                font-size:10px;
+              }
+            }
+            .boxin-right{
+              width:70%;
+              p{
+                font-size:10px;
+              }
+              .flow-supplement{
+                font-size:10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }/*         course-flow end          */
+
+  .why-Bangkok{
+    height:400px;
+    background-image: url(whyBangkok-bg-small.jpg);
+    .why-Bangkok-container{
+      padding-left:10%;
+    }
+  }/*             why-Bangkok end           */
+
+  .iSara-benefits{
+    height:800px;
+    .iSarabenefits-container{
+      h1{
+        font-size:15px;
+      }
+      h2{
+        font-size:13px;
+        padding-bottom:80px;
+        .br-responsive{
+          display:block;
+        }
+      }
+      .benefits-box{
+        width:90%;
+        position: relative;
+        text-align: left;
+
+        padding:50px 0;
+        h3{
+          font-size:15px;
+
+          position: absolute;
+          top:0%;
+          left:50%;
+          transform: translate(-50%,-50%);
+
+          .br-responsive{
+            display:block;
+          }
+        }
+        .benefits-wrapper{
+          width:100%;
+          .benefits{
+            width:70px;
+            height:70px;
+            display:inline-block;
+
+            margin:10px 0 10px 50px;
+            
+            .benefits-text{
+              position: relative;
+  
+              h4{
+                position: absolute;
+                top:50%;
+                left:55%;
+                transform: translate(-50%,-50%);
+  
+                font-size: 14px;
+                width:50px;
+              }
+              h5{
+                width:250px;
+                color:white;
+  
+                position: absolute;
+                top:50%;
+                left:320%;
+                transform: translate(-50%,-50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }/*             iSara-benefits end           */
+
+  .question{
+    .question-container{
+      .panel-wrapper{
+        .panel{
+          .panel-top{
+            text-align: left;
+            h2{
+              font-size:10px;
+              width:70%;
+            }
+  
+          }
+          .panel-bottom{
+            h3{
+              font-size:12px;
+            }
+          }
+        }
+        
+      }
+    }
+  }/*             .question end           */
+
+  .scroll-button {
+    padding:26px 10px;
+    bottom: 20px;
+    right: 10px;
+    i{
+      width:5px;
+      height:5px;
+      padding:3.5px;
+      margin-top:8px;
+      border-bottom:3px solid #333333;
+      border-left:3px solid #333333;
+    }
+  }/*         スクロールボタン          */
+
+}
+@media screen and (max-width:450px){
+  .iSara-learn{
+    height:300px;
+    .iSaralearn-container{
+      h1{
+        padding:40px 0 30px 0;
+      }
+      .learn-box{
+        img{
+          margin: 2px;
+          width:75px;
+        }
+      }
+    }
+  }/*         iSara-learn end          */
+
+  .iSara-merit{
+    height:1470px;
+    .iSaramerit-container{
+      .merit-box{
+        padding:0 30px;
+        h7{
+          br{
+            display:none;
+          }
+          .br-responsive{
+            display:none;
+          }
+        }
+      }
+      h8{
+        .br-responsive{
+          display:none;
+        }
+      }
+    }
+  }/*         iSara-merit end          */
+
+  .interview{
+    .interview-container{
+      .interview-A{
+        .A-container{
+          .heading{
+            p{
+              .br-responsive{
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }/*         interview end          */
+
+  .course-flow{
+    height:1650px;
+    .courseflow-container{
+      .flowbox-wrapper{
+        .flow-box{
+          width:95%;
+          .boxin-wrapper{
+            padding-left:15px;
+            .boxin-left{
+              width:22%;
+            }
+            .boxin-right{
+              width:75%;
+            }
+          }
+        }
+      }
+    }
+  }/*         course-flow end          */
+
+  .iSara-benefits{
+    .iSarabenefits-container{
+      .benefits-box{
+        .benefits-wrapper{
+          .benefits{
+            margin:10px 0 10px 20px;
+            .benefits-text{
+              h5{
+                width:200px;
+  
+                position: absolute;
+                top:50%;
+                left:265%;
+                transform: translate(-50%,-50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }/*             iSara-benefits end           */
+
+  .massage{
+    height:750px;
+    .massage-container{
+      .massage-lr-wrapper{
+        .massage-left{
+          img{
+            width:200px;
+          }
+        }
+        .massage-right{
+          width:320px;
+        }
+      }
+    }
+  }/*             massage end           */
+
+}
